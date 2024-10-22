@@ -30,12 +30,5 @@ namespace PetsHistory.WebApi.Controllers
             var owner = allConfiguration.Where(kvp => kvp.Key == "Configuration:Owner").First().Value;
             return Ok(owner);
         }
-
-        [HttpGet]
-        public IActionResult GetSmth()
-        {
-            
-            return Ok();
-        }
     }
 }
